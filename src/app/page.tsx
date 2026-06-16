@@ -51,27 +51,27 @@ const servicesData = [
   {
     title: "Structural Engineering",
     description: "Expert design and analysis of steel and concrete structures ensuring maximum safety and durability.",
-    image: "/1.jpg",
+    image: "/civil.png",
   },
   {
     title: "Turnkey EPC Solutions",
     description: "Comprehensive end-to-end project execution from initial concept through to final commissioning.",
-    image: "/2.jpg",
+    image: "/turnkey.png",
   },
   {
     title: "Industrial Fabrication",
     description: "High-quality custom fabrication services utilizing state-of-the-art technology and processes.",
-    image: "/3.jpg",
+    image: "/engineers.png",
   },
   {
     title: "Project Management",
     description: "Dedicated supervision and management to deliver complex engineering projects on time and within budget.",
-    image: "/4.jpg",
+    image: "/commercial.png",
   },
   {
     title: "Maintenance & Upgrades",
     description: "Ongoing support, plant maintenance, and technological upgrades for existing industrial facilities.",
-    image: "/industrial_mask.png",
+    image: "/oil_gas.png",
   }
 ];
 
@@ -79,27 +79,27 @@ const sectorsData = [
   {
     title: "Process Chemicals",
     description: "Engineering resources and domain consultants at SES bring a diverse knowledge base with them from working with variety of process industries. This enables us to widen our reach across multiple markets, and still be your single source strategic partner for all your needs.",
-    image: "/2.jpg",
+    image: "/pharma.png",
   },
   {
     title: "Oil & Gas",
     description: "Providing robust structural engineering and management solutions for the oil and gas sector, ensuring safety and efficiency in complex environments.",
-    image: "/1.jpg",
+    image: "/oil_gas.png",
   },
   {
     title: "Pharmaceuticals",
     description: "Delivering state-of-the-art infrastructure for pharmaceutical and biotechnology facilities, adhering to strict industry standards and regulations.",
-    image: "/3.jpg",
+    image: "/pharma.png",
   },
   {
     title: "Heavy Manufacturing",
     description: "Specialized in large-scale industrial structural design, capable of supporting heavy machinery and continuous manufacturing processes.",
-    image: "/4.jpg",
+    image: "/turnkey.png",
   },
   {
     title: "Commercial Infrastructure",
     description: "Designing modern, sustainable commercial buildings and complexes that redefine urban landscapes with a focus on aesthetics and functionality.",
-    image: "/1.jpg",
+    image: "/commercial.png",
   },
 ];
 
@@ -107,27 +107,27 @@ const visionData = [
   {
     time: "1 min",
     title: "Engineering Precision: Agrochemical Formulation Facility",
-    image: "/1.jpg"
+    image: "/civil.png"
   },
   {
     time: "3 min",
     title: "Engineering Excellence For World Class Food & Beverage Facility",
-    image: "/2.jpg"
+    image: "/turnkey.png"
   },
   {
     time: "3 min",
     title: "Transforming Innovation Into Reality: Engineering Excellence For A Fluorochemical Facility",
-    image: "/3.jpg"
+    image: "/engineers.png"
   },
   {
     time: "3 min",
     title: "Expanding Horizons: Engineering Excellence For A 600 TPD Chlor-Alkali Facility",
-    image: "/4.jpg"
+    image: "/oil_gas.png"
   },
   {
     time: "2 min",
     title: "Engineering Excellence For Bromine Recovery And Derivatives Facility",
-    image: "/1.jpg"
+    image: "/commercial.png"
   }
 ];
 

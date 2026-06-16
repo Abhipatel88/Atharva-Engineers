@@ -52,7 +52,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative w-full h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden bg-zinc-950">
         <Image 
-          src="/4.jpg" 
+          src="/commercial.png" 
           alt="Atharva Engineers Hero" 
           fill 
           className="object-cover opacity-40 mix-blend-overlay"
@@ -116,13 +116,13 @@ export default function AboutPage() {
                 <div className="flex items-center gap-6">
                   <div className="flex -space-x-4">
                     <div className="w-12 h-12 rounded-full border-2 border-white bg-zinc-200 overflow-hidden relative">
-                      <Image src="/1.jpg" alt="Team" fill className="object-cover" />
+                      <Image src="/engineers.png" alt="Team" fill className="object-cover" />
                     </div>
                     <div className="w-12 h-12 rounded-full border-2 border-white bg-zinc-300 overflow-hidden relative">
-                      <Image src="/2.jpg" alt="Team" fill className="object-cover" />
+                      <Image src="/civil.png" alt="Team" fill className="object-cover" />
                     </div>
                     <div className="w-12 h-12 rounded-full border-2 border-white bg-zinc-400 overflow-hidden relative">
-                      <Image src="/3.jpg" alt="Team" fill className="object-cover" />
+                      <Image src="/pharma.png" alt="Team" fill className="object-cover" />
                     </div>
                   </div>
                   <div className="text-sm font-medium text-zinc-800">
@@ -136,7 +136,7 @@ export default function AboutPage() {
               <div className="absolute inset-0 bg-sky-100 rounded-3xl transform rotate-3 scale-105 z-0 transition-transform duration-500 hover:rotate-6"></div>
               <div className="absolute inset-0 rounded-3xl overflow-hidden z-10 shadow-2xl">
                 <Image 
-                  src="/3.jpg" 
+                  src="/engineers.png" 
                   alt="Atharva Engineering Team" 
                   fill 
                   className="object-cover hover:scale-105 transition-transform duration-700 ease-out" 
@@ -187,7 +187,7 @@ export default function AboutPage() {
       {/* Parallax Stats Section (Consistent with homepage but slightly different style) */}
       <section 
         className="relative w-full py-24 md:py-32 bg-fixed bg-center bg-cover flex flex-col items-center justify-center text-white"
-        style={{ backgroundImage: 'url("/1.jpg")' }}
+        style={{ backgroundImage: 'url("/turnkey.png")' }}
       >
         <div className="absolute inset-0 bg-zinc-950/80 backdrop-blur-sm"></div>
         

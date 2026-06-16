@@ -77,7 +77,7 @@ export default function VisionMissionPage() {
               <div className="absolute inset-0 bg-zinc-100 rounded-[3rem] transform rotate-6 scale-105 z-0 transition-transform duration-500"></div>
               <div className="absolute inset-0 rounded-[3rem] overflow-hidden z-10 shadow-xl border-4 border-white">
                 <Image 
-                  src="/3.jpg" 
+                  src="/pharma.png" 
                   alt="Our Vision" 
                   fill 
                   className="object-cover" 
@@ -94,7 +94,7 @@ export default function VisionMissionPage() {
       <section className="relative w-full py-20 md:py-32 bg-zinc-950 text-white overflow-hidden">
         {/* Subtle background texture */}
         <Image 
-          src="/1.jpg" 
+          src="/commercial.png" 
           alt="Background" 
           fill 
           className="object-cover opacity-10" 
@@ -109,7 +109,7 @@ export default function VisionMissionPage() {
               <div className="absolute -inset-2 bg-gradient-to-r from-sky-500 to-blue-600 rounded-xl blur opacity-30 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
               <div className="relative h-full w-full rounded-xl overflow-hidden bg-black border border-zinc-800">
                 <Image 
-                  src="/4.jpg" 
+                  src="/turnkey.png" 
                   alt="Our Mission" 
                   fill 
                   className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" 

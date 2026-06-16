@@ -13,7 +13,7 @@ export default function OurStrengthPage() {
       {/* Hero Section */}
       <section className="relative w-full h-[50vh] md:h-[60vh] flex items-center justify-center overflow-hidden bg-zinc-900">
         <Image 
-          src="/1.jpg" 
+          src="/engineers.png" 
           alt="Our Strength" 
           fill 
           className="object-cover opacity-30 mix-blend-overlay grayscale"
