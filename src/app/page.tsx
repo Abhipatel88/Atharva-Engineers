@@ -16,6 +16,13 @@ import {
   CarouselCustomNav,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(useGSAP, ScrollTrigger);
+}
 
 const slides = [
   {
@@ -129,11 +136,105 @@ export default function Home() {
     Autoplay({ delay: 4000, stopOnInteraction: false })
   );
 
+  useGSAP(() => {
+    // 1. Hero text parallax effect on scroll
+    gsap.to(".hero-text-container", {
+      yPercent: 50,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".hero-section",
+        start: "top top",
+        end: "bottom top",
+        scrub: true,
+      },
+    });
+
+    // 2. About Section - Complex Reveal
+    const aboutTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".about-section",
+        start: "top 75%",
+      }
+    });
+    aboutTl.from(".about-image-mask", {
+      clipPath: "inset(100% 0 0 0)",
+      duration: 1.5,
+      ease: "power4.inOut"
+    })
+    .from(".about-image-mask img", {
+      scale: 1.5,
+      duration: 1.5,
+      ease: "power4.inOut"
+    }, "<")
+    .from(".about-content > *", {
+      y: 40,
+      opacity: 0,
+      duration: 1,
+      stagger: 0.1,
+      ease: "power3.out"
+    }, "-=1");
+
+    // 3. Services Section - Stagger with slight rotation
+    gsap.from(".service-card", {
+      scrollTrigger: {
+        trigger: ".services-section",
+        start: "top 70%",
+      },
+      y: 100,
+      rotationX: -15,
+      opacity: 0,
+      duration: 1,
+      stagger: 0.1,
+      ease: "power3.out",
+      transformPerspective: 1000
+    });
+
+    // 4. Stats Section - Scrubbed scale and opacity
+    gsap.fromTo(".stats-bg", 
+      { backgroundPosition: "50% 0%" },
+      { 
+        backgroundPosition: "50% 100%",
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".stats-section",
+          start: "top bottom",
+          end: "bottom top",
+          scrub: true
+        }
+      }
+    );
+
+    gsap.from(".stat-item", {
+      scrollTrigger: {
+        trigger: ".stats-section",
+        start: "top 70%",
+      },
+      scale: 0.5,
+      opacity: 0,
+      duration: 1,
+      stagger: 0.2,
+      ease: "elastic.out(1, 0.5)"
+    });
+
+    // 5. Sectors Section - Clip Path Reveal
+    gsap.from(".sector-item", {
+      scrollTrigger: {
+        trigger: ".sectors-section",
+        start: "top 60%",
+      },
+      clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)",
+      y: 50,
+      duration: 1.2,
+      stagger: 0.15,
+      ease: "power4.out"
+    });
+  });
+
   return (
     <main className="min-h-screen bg-slate-50 text-foreground flex flex-col">
       <NavigationMenuDemo />
       
-      <section className="w-full h-[80vh] flex">
+      <section className="hero-section w-full h-[80vh] flex overflow-hidden">
         <Carousel
           plugins={[plugin.current]}
           className="w-full h-full"
@@ -152,7 +253,7 @@ export default function Home() {
                     priority={index === 0}
                   />
                   <div className="absolute inset-0 bg-black/50 -z-10" />
-                  <div className="max-w-4xl space-y-6 md:space-y-8 z-10">
+                  <div className="hero-text-container max-w-4xl space-y-6 md:space-y-8 z-10">
                     <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">{slide.title}</h2>
                     <p className="text-lg md:text-2xl lg:text-3xl text-white/90 max-w-3xl mx-auto">{slide.description}</p>
                   </div>
@@ -165,9 +266,9 @@ export default function Home() {
       </section>
 
       {/* About Us Section */}
-      <section className="w-full max-w-7xl mx-auto px-4 py-16 md:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+      <section className="about-section w-full max-w-7xl mx-auto px-4 py-16 md:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
         {/* Left Column: Masked Logo */}
-        <div className="relative w-full aspect-square max-w-sm mx-auto lg:max-w-md flex items-center justify-center">
+        <div className="about-image-mask relative w-full aspect-square max-w-sm mx-auto lg:max-w-md flex items-center justify-center" style={{ clipPath: "inset(0 0 0 0)" }}>
           <div 
             className="w-full h-full drop-shadow-2xl"
             style={{
@@ -192,7 +293,7 @@ export default function Home() {
         </div>
 
         {/* Right Column: Content */}
-        <div className="flex flex-col space-y-6">
+        <div className="about-content flex flex-col space-y-6">
           <div className="space-y-2">
             <h2 className="text-6xl md:text-7xl lg:text-8xl font-bold text-slate-200 tracking-tight leading-none">ATHARVA</h2>
             <h3 className="text-2xl md:text-3xl font-semibold text-zinc-900 tracking-wide uppercase">ENGINEERS PVT. LTD</h3>
@@ -216,7 +317,7 @@ export default function Home() {
       </section>
 
       {/* Our Services Section */}
-      <section className="relative w-full bg-[#f4f7fc] pt-10 pb-16 md:pt-16 md:pb-24 overflow-hidden">
+      <section className="services-section relative w-full bg-[#f4f7fc] pt-10 pb-16 md:pt-16 md:pb-24 overflow-hidden">
         <GridPattern
           width={40}
           height={40}
@@ -243,7 +344,7 @@ export default function Home() {
             >
               <CarouselContent className="-ml-4 py-8">
                 {servicesData.map((service, index) => (
-                  <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+                  <CarouselItem key={index} className="service-card pl-4 md:basis-1/2 lg:basis-1/3 xl:basis-1/4">
                     <div className="group h-full bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col">
                       {/* Card Image */}
                       <div className="relative w-full h-56 overflow-hidden">
@@ -283,8 +384,8 @@ export default function Home() {
 
       {/* Parallax Stats Section */}
       <section 
-        className="relative w-full py-16 md:py-20 bg-fixed bg-center bg-cover flex flex-col items-center justify-center text-white"
-        style={{ backgroundImage: 'url("/2.jpg")' }}
+        className="stats-section stats-bg relative w-full py-16 md:py-20 flex flex-col items-center justify-center text-white"
+        style={{ backgroundImage: 'url("/2.jpg")', backgroundSize: 'cover', backgroundPosition: '50% 0%' }}
       >
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-zinc-900/80"></div>
@@ -295,17 +396,17 @@ export default function Home() {
           </h2>
           
           <div className="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-24">
-            <div className="flex flex-col items-center justify-center">
+            <div className="stat-item flex flex-col items-center justify-center">
               <div className="text-4xl md:text-5xl font-bold mb-2">15+</div>
               <div className="text-xs md:text-sm font-semibold tracking-widest text-blue-200 uppercase">Years Experience</div>
             </div>
             
-            <div className="flex flex-col items-center justify-center">
+            <div className="stat-item flex flex-col items-center justify-center">
               <div className="text-4xl md:text-5xl font-bold mb-2">200+</div>
               <div className="text-xs md:text-sm font-semibold tracking-widest text-blue-200 uppercase">Engineers</div>
             </div>
             
-            <div className="flex flex-col items-center justify-center">
+            <div className="stat-item flex flex-col items-center justify-center">
               <div className="text-4xl md:text-5xl font-bold mb-2">350+</div>
               <div className="text-xs md:text-sm font-semibold tracking-widest text-blue-200 uppercase">Projects</div>
             </div>
@@ -314,7 +415,7 @@ export default function Home() {
       </section>
 
       {/* Sectors Section */}
-      <section className="w-full bg-white py-16 md:py-24 overflow-hidden relative">
+      <section className="sectors-section w-full bg-white py-16 md:py-24 overflow-hidden relative">
         <div className="max-w-[1400px] mx-auto px-4 w-full">
           {/* Header */}
           <div className="relative mb-8 md:mb-12">
@@ -338,9 +439,10 @@ export default function Home() {
               <div 
                 key={index} 
                 className={cn(
-                  "relative h-[400px] rounded-xl overflow-hidden group cursor-pointer",
+                  "sector-item relative h-[400px] rounded-xl overflow-hidden group cursor-pointer",
                   index === 0 ? "lg:col-span-2 lg:row-span-2 h-[400px] lg:h-[816px]" : ""
                 )}
+                style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}
               >
                 <Image 
                   src={sector.image} 

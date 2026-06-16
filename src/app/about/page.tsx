@@ -95,13 +95,20 @@ export default function AboutPage() {
               
               <div className="space-y-6 text-zinc-600 text-lg leading-relaxed font-light">
                 <p>
-                  Founded with a vision to redefine the engineering and construction landscape, Atharva Engineers Pvt. Ltd. has grown into a premier provider of Engineering, Procurement, and Construction (EPC) services. 
+                  Founded in 2003, Atharva Engineers is a leading multidisciplinary engineering consultancy delivering innovative, sustainable, and value-driven solutions across industrial, commercial, residential, institutional, and infrastructure sectors. With over 22 years of professional experience, we have built a strong reputation for technical excellence, reliability, and successful project delivery.
                 </p>
                 <p>
-                  Our journey is marked by a relentless pursuit of perfection. From conceptual design to turnkey execution, we integrate multidisciplinary expertise to deliver projects that stand the test of time. We cater to a diverse array of sectors including Process Chemicals, Pharmaceuticals, Oil & Gas, and Heavy Manufacturing.
+                  Atharva Engineers provides comprehensive services encompassing engineering design, architectural planning, project management, statutory compliance, detailed engineering, EPC support, and technical consultancy. Our integrated approach enables clients to benefit from a single-source solution throughout the entire project lifecycle—from concept and planning to execution, commissioning, and handover.
                 </p>
                 <p>
-                  At Atharva, we don't just build structures; we build trust, reliability, and sustainable infrastructures that empower industries and communities to thrive.
+                  Our team comprises experienced engineers, architects, project managers, and technical specialists who combine industry expertise with innovative thinking to deliver practical, efficient, and future-ready solutions. We are committed to creating designs that optimize performance, enhance safety, improve sustainability, and maximize long-term value.
+                </p>
+                <p>
+                  Over the years, Atharva Engineers has successfully partnered with private industries, commercial organizations, institutions, government bodies, and public-sector enterprises across India, delivering projects that meet the highest standards of quality, functionality, and compliance.
+                </p>
+                <p className="font-medium text-zinc-900 pt-2">
+                  <span className="text-sky-600 font-bold">Engineering Innovation. Delivering Excellence.</span><br/>
+                  At Atharva Engineers, we transform ideas into enduring assets through intelligent engineering, meticulous planning, and a commitment to excellence—helping clients achieve their vision with confidence, efficiency, and lasting success.
                 </p>
               </div>
 

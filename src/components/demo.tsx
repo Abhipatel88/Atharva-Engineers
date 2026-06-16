@@ -70,11 +70,11 @@ export const serviceLinks: NavItemType[] = [
 
 export default function NavigationMenuDemo() {
 	return (
-		<header className="relative w-full bg-slate-50">
+		<header className="sticky top-0 z-50 w-full bg-slate-50 flex flex-col">
 			<div
 				aria-hidden="true"
 				className={cn(
-					'absolute inset-0 -z-10 h-full w-full',
+					'absolute inset-0 -z-10 h-full w-full bg-white',
 					'bg-[radial-gradient(color-mix(in_oklab,--theme(--color-foreground/.2)30%,transparent)_2px,transparent_2px)]',
 					'bg-[size:12px_12px]',
 				)}
@@ -105,7 +105,7 @@ export default function NavigationMenuDemo() {
 				<div className="flex h-16 max-w-7xl mx-auto items-center justify-between px-4">
 					<div className="flex items-center gap-3">
 						<Image src="/image.png" alt="Atharva Engineers Logo" width={40} height={40} className="object-contain" />
-						<p className="text-xl font-bold hidden sm:block tracking-wide" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>Atharva Engineers</p>
+						<p className="text-lg sm:text-xl font-bold tracking-wide" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>Atharva Engineers</p>
 					</div>
 					<DesktopMenu />
 
@@ -239,16 +239,16 @@ function MoileNav() {
 				</Button>
 			</SheetTrigger>
 			<SheetContent
-				className="bg-white/95 supports-[backdrop-filter]:bg-white/80 w-full gap-0 backdrop-blur-lg"
+				className="bg-black/90 supports-[backdrop-filter]:bg-black/60 w-full gap-0 backdrop-blur-xl text-white border-zinc-800"
 				showClose={false}
 			>
-				<div className="flex h-16 items-center justify-between border-b px-4">
-					<div className="flex items-center gap-3">
-						<Image src="/image.png" alt="Atharva Engineers Logo" width={32} height={32} className="object-contain" />
-						<p className="text-lg font-bold tracking-wide" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>Atharva</p>
+				<div className="flex h-16 items-center justify-between border-b border-zinc-800 px-4">
+					<div className="flex items-center gap-3 bg-white/10 p-1.5 rounded-md backdrop-blur-md">
+						<Image src="/image.png" alt="Atharva Engineers Logo" width={32} height={32} className="object-contain bg-white rounded-sm p-0.5" />
+						<p className="text-lg font-bold tracking-wide pr-2" style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}>Atharva Engineers</p>
 					</div>
 					<SheetClose asChild>
-						<Button size="icon" variant="ghost" className="rounded-full">
+						<Button size="icon" variant="ghost" className="rounded-full hover:bg-white/10 hover:text-white">
 							<XIcon className="size-5" />
 							<span className="sr-only">Close</span>
 						</Button>
@@ -274,11 +274,11 @@ function MoileNav() {
 									{section.id}
 								</AccordionTrigger>
 								<AccordionContent className="space-y-1 pb-4">
-									<ul className="grid gap-1 pl-4 border-l">
+									<ul className="grid gap-1 pl-4 border-l border-zinc-800">
 										{section.list.map((link) => (
 											<li key={link.title}>
 												<SheetClose asChild>
-													<Link href={link.href} className="block py-2 text-sm text-zinc-500 hover:text-zinc-900">
+													<Link href={link.href} className="block py-2 text-sm text-zinc-400 hover:text-white transition-colors">
 														{link.title}
 													</Link>
 												</SheetClose>

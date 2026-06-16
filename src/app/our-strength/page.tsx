@@ -44,7 +44,7 @@ export default function OurStrengthPage() {
             <span className="text-amber-500">Excellence & Reliability</span>
           </h2>
           <p className="text-zinc-600 text-lg leading-relaxed font-light">
-            In an industry where precision and timing are critical, our strengths lie in our ability to execute complex projects flawlessly. We combine deep domain expertise, a robust supply chain, and an unwavering commitment to quality to deliver solutions that stand the test of time.
+            At Atharva Engineers, our strength lies in our ability to deliver comprehensive engineering solutions with precision, innovation, and a strong commitment to quality. We combine technical expertise with practical project experience to provide clients with efficient, reliable, and value-driven outcomes.
           </p>
         </div>
       </section>
@@ -63,9 +63,9 @@ export default function OurStrengthPage() {
                 <div className="w-16 h-16 bg-amber-50 text-amber-500 rounded-2xl flex items-center justify-center mb-8">
                   <Users className="w-8 h-8" />
                 </div>
-                <h3 className="text-3xl font-bold text-zinc-900 mb-4">Expert Engineering Team</h3>
+                <h3 className="text-3xl font-bold text-zinc-900 mb-4">Integrated Engineering Expertise</h3>
                 <p className="text-zinc-600 font-light leading-relaxed max-w-xl text-lg">
-                  Our greatest asset is our people. We house a multidisciplinary team of veteran engineers, visionary architects, and skilled project managers who bring decades of collective experience to every challenge.
+                  Providing end-to-end solutions from concept development and detailed engineering to execution support and commissioning.
                 </p>
               </div>
             </div>
@@ -77,9 +77,9 @@ export default function OurStrengthPage() {
                 <div className="w-16 h-16 bg-white/10 text-amber-400 rounded-2xl flex items-center justify-center mb-8 border border-white/10">
                   <Clock className="w-8 h-8" />
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-4">On-Time Execution</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">Timely Project Delivery</h3>
                 <p className="text-zinc-400 font-light leading-relaxed">
-                  We employ rigorous project management frameworks to ensure that milestones are met and projects are delivered strictly on schedule, without compromising quality.
+                  Ensuring projects are completed within committed schedules without compromising quality or safety.
                 </p>
               </div>
             </div>
@@ -89,9 +89,9 @@ export default function OurStrengthPage() {
               <div className="w-16 h-16 bg-blue-50 text-blue-500 rounded-2xl flex items-center justify-center mb-8">
                 <ShieldCheck className="w-8 h-8" />
               </div>
-              <h3 className="text-2xl font-bold text-zinc-900 mb-4">Quality Assurance</h3>
+              <h3 className="text-2xl font-bold text-zinc-900 mb-4">Precision-Driven Design</h3>
               <p className="text-zinc-600 font-light leading-relaxed">
-                Adherence to strict international quality standards (ISO certified). Every material and process is subjected to stringent testing.
+                Delivering high-quality, accurate, and constructible designs with meticulous attention to detail.
               </p>
             </div>
 
@@ -100,9 +100,9 @@ export default function OurStrengthPage() {
               <div className="w-16 h-16 bg-green-50 text-green-500 rounded-2xl flex items-center justify-center mb-8">
                 <Cpu className="w-8 h-8" />
               </div>
-              <h3 className="text-2xl font-bold text-zinc-900 mb-4">Technological Edge</h3>
+              <h3 className="text-2xl font-bold text-zinc-900 mb-4">Innovation & Technology</h3>
               <p className="text-zinc-600 font-light leading-relaxed">
-                Leveraging BIM, advanced ERP systems, and automated fabrication to increase accuracy, reduce waste, and enhance safety.
+                Leveraging advanced engineering tools, modern design methodologies, and emerging technologies to develop efficient and future-ready solutions.
               </p>
             </div>
 
@@ -111,10 +111,26 @@ export default function OurStrengthPage() {
               <div className="w-16 h-16 bg-purple-50 text-purple-500 rounded-2xl flex items-center justify-center mb-8">
                 <Zap className="w-8 h-8" />
               </div>
-              <h3 className="text-2xl font-bold text-zinc-900 mb-4">Turnkey Capability</h3>
+              <h3 className="text-2xl font-bold text-zinc-900 mb-4">Sustainable Engineering</h3>
               <p className="text-zinc-600 font-light leading-relaxed">
-                From initial conceptualization and design to procurement, execution, and handover, we provide end-to-end solutions under one roof.
+                Creating aesthetically appealing, energy-efficient, and environmentally responsible designs that enhance long-term value.
               </p>
+            </div>
+
+            {/* Card 6 */}
+            <div className="md:col-span-3 bg-zinc-900 text-white rounded-3xl p-8 lg:p-12 shadow-sm border border-slate-800 hover:shadow-xl transition-all duration-300 group overflow-hidden relative mt-4">
+              <div className="absolute inset-0 bg-gradient-to-r from-amber-500/5 to-transparent"></div>
+              <div className="relative z-10 flex flex-col md:flex-row gap-8 items-center">
+                <div className="w-24 h-24 bg-white/10 text-amber-400 rounded-3xl flex items-center justify-center flex-shrink-0 border border-white/10">
+                  <Trophy className="w-12 h-12" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-white mb-2">Driven by Experience. Powered by Innovation.</h3>
+                  <p className="text-zinc-400 font-light leading-relaxed text-lg">
+                    Our greatest asset is the combination of experienced professionals and a dynamic new generation of engineers who bring fresh perspectives, innovative ideas, and modern technological expertise. This blend of experience and innovation enables Atharva Engineers to deliver smarter solutions, embrace emerging industry trends, and build sustainable infrastructure for the future.
+                  </p>
+                </div>
+              </div>
             </div>
 
           </div>

@@ -52,13 +52,22 @@ export default function VisionMissionPage() {
               
               <div className="text-zinc-600 text-lg leading-relaxed font-light space-y-6">
                 <p className="text-2xl font-medium text-zinc-800 border-l-4 border-sky-500 pl-6 py-2">
-                  "To be the globally recognized leader in delivering innovative, sustainable, and world-class engineering solutions that shape the infrastructure of tomorrow."
+                  "To Be a Trusted Partner in Delivering Excellence Through Engineering Innovation"
                 </p>
                 <p>
-                  We envision a future where complex industrial and architectural challenges are met with intelligent, efficient, and robust engineering. Our goal is to continually push the boundaries of design and construction, fostering environments where progress and sustainability coexist harmoniously.
+                  At Atharva Engineers, our vision is to provide high-quality engineering design, consultancy, and construction solutions that consistently exceed client expectations while creating sustainable value for industries and communities.
                 </p>
-                <p>
-                  By embracing technological advancements and maintaining an uncompromising standard of quality, we aim to inspire trust and become the preferred partner for complex EPC projects worldwide.
+                <p className="font-semibold text-zinc-900">We are committed to:</p>
+                <ul className="list-disc pl-5 space-y-2">
+                  <li>Delivering services in accordance with the highest industry standards and best engineering practices.</li>
+                  <li>Achieving precision and excellence through meticulous planning and near-zero-error design detailing.</li>
+                  <li>Maintaining flexibility and responsiveness to meet the unique requirements of every client and project.</li>
+                  <li>Developing innovative, practical, and cost-effective engineering solutions that maximize project value.</li>
+                  <li>Promoting sustainable development through environmentally responsible design and resource-efficient practices.</li>
+                  <li>Fostering long-term relationships built on trust, quality, integrity, and professional excellence.</li>
+                </ul>
+                <p className="italic">
+                  Our vision is to shape a safer, smarter, and more sustainable future by transforming engineering challenges into successful and lasting solutions.
                 </p>
               </div>
             </div>
@@ -119,29 +128,60 @@ export default function VisionMissionPage() {
               <div className="w-20 h-1.5 bg-sky-500"></div>
               
               <div className="text-zinc-300 text-lg leading-relaxed font-light space-y-6">
-                <p>
-                  To provide our clients with exceptional engineering, procurement, and construction services through a commitment to excellence, continuous innovation, and uncompromising safety.
+                <p className="text-2xl font-medium text-white border-l-4 border-sky-500 pl-6 py-2">
+                  "Delivering Engineering Excellence Through Innovation, Quality, and Value Creation"
                 </p>
+                <p>
+                  At Atharva Engineers, our mission is to provide integrated engineering and architectural solutions that drive project success through technical excellence, innovation, and efficient execution.
+                </p>
+                <p className="font-semibold text-white">We are committed to:</p>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-4">
                     <div className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-sky-500/20 flex items-center justify-center border border-sky-500/50">
                       <div className="w-2 h-2 bg-sky-400 rounded-full"></div>
                     </div>
-                    <p><strong className="text-white font-medium">Delivering Value:</strong> Execute projects on time, within budget, and to the highest quality standards, ensuring maximum ROI for our clients.</p>
+                    <p>Delivering measurable engineering and architectural solutions that maximize value through cost optimization and reduced construction timelines.</p>
                   </li>
                   <li className="flex items-start gap-4">
                     <div className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-sky-500/20 flex items-center justify-center border border-sky-500/50">
                       <div className="w-2 h-2 bg-sky-400 rounded-full"></div>
                     </div>
-                    <p><strong className="text-white font-medium">Empowering People:</strong> Foster a culture of continuous learning, respect, and safety for our workforce and partners.</p>
+                    <p>Applying innovative, practical, and sustainable engineering concepts to meet evolving industry demands.</p>
                   </li>
                   <li className="flex items-start gap-4">
                     <div className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-sky-500/20 flex items-center justify-center border border-sky-500/50">
                       <div className="w-2 h-2 bg-sky-400 rounded-full"></div>
                     </div>
-                    <p><strong className="text-white font-medium">Sustainable Growth:</strong> Adopt eco-friendly practices and green building solutions that minimize environmental impact.</p>
+                    <p>Providing comprehensive, one-stop engineering and consultancy services under a single roof for seamless project delivery.</p>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <div className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-sky-500/20 flex items-center justify-center border border-sky-500/50">
+                      <div className="w-2 h-2 bg-sky-400 rounded-full"></div>
+                    </div>
+                    <p>Simplifying project execution while optimizing construction, operational, and lifecycle costs.</p>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <div className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-sky-500/20 flex items-center justify-center border border-sky-500/50">
+                      <div className="w-2 h-2 bg-sky-400 rounded-full"></div>
+                    </div>
+                    <p>Maintaining the highest standards of Quality Assurance (QA) and Quality Control (QC) across all project phases.</p>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <div className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-sky-500/20 flex items-center justify-center border border-sky-500/50">
+                      <div className="w-2 h-2 bg-sky-400 rounded-full"></div>
+                    </div>
+                    <p>Ensuring safety, reliability, compliance, and long-term performance in every solution we deliver.</p>
+                  </li>
+                  <li className="flex items-start gap-4">
+                    <div className="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-sky-500/20 flex items-center justify-center border border-sky-500/50">
+                      <div className="w-2 h-2 bg-sky-400 rounded-full"></div>
+                    </div>
+                    <p>Building lasting client relationships through professionalism, transparency, and consistent project excellence.</p>
                   </li>
                 </ul>
+                <p className="italic pt-4 border-t border-zinc-800">
+                  Our mission is to transform ideas into successful, sustainable, and high-performing projects through engineering expertise, innovation, and unwavering commitment to quality.
+                </p>
               </div>
             </div>
 
