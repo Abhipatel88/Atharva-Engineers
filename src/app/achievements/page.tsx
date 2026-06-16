@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import NavigationMenuDemo from "@/components/demo";
-import { Award, Star, Medal, CheckCircle2, TrendingUp } from 'lucide-react';
+import { Award, Star, Medal, CheckCircle2, TrendingUp, ShieldCheck } from 'lucide-react';
 
 export default function AchievementsPage() {
   return (
@@ -144,21 +144,6 @@ export default function AchievementsPage() {
       </section>
 
       {/* CSS for animations */}
-      <style dangerouslySetInnerHTML={{__html: `
-        @keyframes fadeInUp {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        .animate-fade-in-up {
-          animation: fadeInUp 0.8s ease-out forwards;
-        }
-      `}} />
-    </main>
+</main>
   );
 }

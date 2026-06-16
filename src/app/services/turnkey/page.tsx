@@ -142,13 +142,6 @@ export default function TurnkeyEPCPage() {
       </section>
 
       {/* CSS for animations */}
-      <style dangerouslySetInnerHTML={{__html: `
-        @keyframes fadeInUp {
-          from { opacity: 0; transform: translateY(20px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
-      `}} />
-    </main>
+</main>
   );
 }
